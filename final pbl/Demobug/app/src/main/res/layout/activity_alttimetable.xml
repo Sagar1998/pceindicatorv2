@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.salmanmapkar.demo.alttimetable">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="#8b0304">
+<GridLayout
+    android:id="@+id/grdlayout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.25"
+    android:background="@drawable/appbackground01"
+    android:columnCount="3"
+    >
+    <Spinner
+        android:id="@+id/semester"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_columnWeight="1.25"
+        tools:targetApi="lollipop"></Spinner>
+    <Spinner
+        android:id="@+id/branch"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_columnWeight="1.25"
+        android:visibility="invisible"
+        tools:targetApi="lollipop"></Spinner>
+</GridLayout>
+
+    <ListView
+        android:id="@+id/listv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/appbackground01"
+        android:layout_weight="8.75"></ListView>
+</LinearLayout>
+</ScrollView>

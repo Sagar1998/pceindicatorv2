@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.salmanmapkar.demo.althomepage">
+
+    <android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/appbackground01"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="#8b0304">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/todo"
+                    app:srcCompat="@drawable/pcelogo" />
+
+                <Button
+                    android:id="@+id/menu_button"
+                    android:layout_width="29dp"
+                    android:layout_height="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="27dp"
+                    android:layout_toStartOf="@+id/imageView2"
+                    android:background="@drawable/ic_menu_white_36dp"
+                    />
+
+                <Button
+                    android:id="@+id/notifcation"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:background="@drawable/ic_speaker_notes_white_48dp" />
+
+            </RelativeLayout>
+
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5.5"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:paddingBottom="0dp"
+                android:paddingTop="16dp"
+                android:rowCount="2">
+
+                <Button
+                    android:id="@+id/timetable"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/rounded_rectangle"
+                    android:contentDescription="@string/todo"
+                    android:drawableTop="@drawable/timetable_icon"
+                    android:paddingTop="20dp"
+                    android:text="@string/timetable"
+                    tools:targetApi="lollipop"></Button>
+
+
+                <Button
+                    android:id="@+id/maps"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/rounded_rectangle"
+                    android:contentDescription="@string/todo"
+                    android:drawableTop="@drawable/map"
+                    android:paddingTop="20dp"
+                    android:text="@string/map"
+                    tools:targetApi="lollipop">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/result"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/rounded_rectangle"
+                    android:contentDescription="@string/todo"
+                    android:drawableTop="@drawable/results_icon"
+                    android:paddingTop="20dp"
+                    android:text="@string/result"
+                    tools:targetApi="lollipop">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/faculty"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/rounded_rectangle"
+                    android:contentDescription="@string/todo"
+                    android:drawableTop="@drawable/faculty"
+                    android:paddingTop="20dp"
+                    android:text="@string/faculty"
+                    android:visibility="visible"
+                    tools:targetApi="lollipop">
+
+                </Button>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/appbackground01"
+        android:layout_gravity="start"
+        app:menu="@menu/drawermenu"
+        app:headerLayout="@layout/nav_header"
+        android:fitsSystemWindows="true"></android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+</android.support.v4.widget.DrawerLayout>

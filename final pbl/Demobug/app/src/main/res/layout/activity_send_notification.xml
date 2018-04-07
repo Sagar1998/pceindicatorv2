@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground01"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.salmanmapkar.demo.sendNotification">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:columnCount="3"
+        android:rowCount="1"
+        >
+
+        <Spinner
+            android:id="@+id/spYear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1.5"
+            />
+
+        <Spinner
+            android:id="@+id/spBranch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1.5"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spDiv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1.5"
+            android:visibility="gone" />
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        >
+
+
+        <EditText
+            android:id="@+id/NotifiData"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/rounded_rectangle"
+            android:ems="10"
+            android:hint="Type You Message here.."
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:inputType="textMultiLine"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/sendNotifi"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NotifiData"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:text="send"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:background="@drawable/button_background"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

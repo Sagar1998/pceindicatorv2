@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/appbackground01"
+    android:paddingStart="18dp"
+    android:paddingEnd="18dp"
+    tools:context="com.example.salmanmapkar.demo.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/pcestartuplogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/pcelogo11" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pcestartuplogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="@string/getstarted"
+        android:textSize="20sp"
+        android:visibility="visible"/>
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/trans_white_rectangle"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_mail_outline_black_24px"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:elevation="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/padlock_lock_icon"
+        android:paddingStart="18dp"
+        android:drawablePadding="22dp"
+        android:background="@drawable/trans_white_rectangle"
+        android:visibility="visible"
+        android:elevation="8dp"
+         />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_rectangle_buttons"
+        android:text="Submit"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:elevation="8dp"/>
+
+
+
+    <TextView
+        android:id="@+id/facultylogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Faculty?Click here to sign in."
+        android:textColor="#8b0304"
+        android:textSize="18sp"
+        />
+
+
+</RelativeLayout>
